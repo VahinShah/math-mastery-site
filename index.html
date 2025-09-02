@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Mastery</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Toggle dark mode by toggling the 'dark' class on the html element
+    function toggleDarkMode() {
+      document.documentElement.classList.toggle('dark');
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 dark:text-white">
+  <!-- Header with logo and dark mode toggle -->
+  <header class="flex items-center justify-between p-4">
+    <div class="flex items-center space-x-2">
+      <!-- Use the uploaded logo; save the PNG as /assets/math-mastery-logo.png in the repo -->
+      <img src="assets/math-mastery-logo.png" alt="Math Mastery Logo" class="h-10">
+      <span class="text-2xl font-bold">Math Mastery</span>
+    </div>
+    <button onclick="toggleDarkMode()" class="px-4 py-2 rounded-md bg-gray-200 dark:bg-gray-700">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Hero section -->
+  <section id="hero" class="text-center py-16 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Unlock Your Math Potential</h1>
+    <p class="mb-6">Personalized math tutoring for Grades 1–8. Experienced tutor. Flexible scheduling.</p>
+    <a href="#booking" class="inline-block px-6 py-3 bg-white text-blue-700 font-semibold rounded-md">Book a Session</a>
+  </section>
+
+  <!-- Services and curriculum -->
+  <section id="services" class="py-16 px-6 md:px-16">
+    <h2 class="text-3xl font-bold mb-6 text-center">Services &amp; Curriculum</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-3">Grades 1–4</h3>
+        <p>Build a strong foundation in basic arithmetic, number sense, and problem solving.</p>
+      </div>
+      <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-3">Grades 5–6</h3>
+        <p>Master fractions, decimals, geometry basics, and pre-algebra concepts.</p>
+      </div>
+      <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow">
+        <h3 class="text-xl font-semibold mb-3">Grades 7–8</h3>
+        <p>Get ahead in algebra, geometry, and prepare for high school math success.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 px-6 md:px-16 bg-gray-50 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6 text-center">Pricing</h2>
+    <div class="max-w-md mx-auto p-8 bg-white dark:bg-gray-700 rounded-xl shadow text-center">
+      <h3 class="text-2xl font-semibold mb-4">Top Tier Plan</h3>
+      <p class="text-5xl font-bold mb-4">$100<span class="text-lg font-medium">/hr</span></p>
+      <p class="mb-6">One-on-one tutoring sessions tailored to your child's needs.</p>
+      <a href="#booking" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-md">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 px-6 md:px-16">
+    <h2 class="text-3xl font-bold mb-6 text-center">About the Tutor</h2>
+    <p class="max-w-3xl mx-auto text-lg text-center">I am a certified math educator with over 10 years of experience helping students conquer math anxiety and achieve excellence. With a passion for numbers and a patient teaching style, I make math engaging and accessible for every learner.</p>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-6 md:px-16 bg-gray-50 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <details class="p-4 bg-white dark:bg-gray-700 rounded-md">
+        <summary class="font-semibold">Do you offer group sessions?</summary>
+        <p class="mt-2">Currently, I focus on one-on-one tutoring to ensure each student receives individual attention.</p>
+      </details>
+      <details class="p-4 bg-white dark:bg-gray-700 rounded-md">
+        <summary class="font-semibold">How do I schedule a session?</summary>
+        <p class="mt-2">Simply use the booking form below to request your preferred time and date.</p>
+      </details>
+      <details class="p-4 bg-white dark:bg-gray-700 rounded-md">
+        <summary class="font-semibold">Can sessions be cancelled?</summary>
+        <p class="mt-2">Yes, please provide at least 24 hours' notice for cancellations.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- Booking form -->
+  <section id="booking" class="py-16 px-6 md:px-16">
+    <h2 class="text-3xl font-bold mb-6 text-center">Book Your Session</h2>
+    <div class="max-w-4xl mx-auto">
+      <!-- Embed Google Form using the public view link -->
+      <iframe src="https://docs.google.com/forms/u/4/d/1S-S_6X-x9PYrEi24YiQ4N41m142P_7IMpIGBGS2j_zU/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <!-- Footer with contact info -->
+  <footer class="py-8 bg-gray-900 text-gray-200">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="assets/math-mastery-logo.png" alt="Math Mastery Logo" class="h-8 mx-auto mb-3">
+      <p>Contact: <a href="mailto:contact@mathmastery.com" class="underline">contact@mathmastery.com</a></p>
+      <p class="mt-1">Phone: 123-456-7890</p>
+      <p class="mt-1">Follow on Instagram: <a href="https://instagram.com/mathmastery" class="underline">@mathmastery</a></p>
+      <p class="mt-4 text-sm">&copy; 2025 Math Mastery. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
